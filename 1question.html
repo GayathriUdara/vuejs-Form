@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuejs lab</title>
+</head>
+<body>
+    <div id="myapp" style="border : 1px solid black; width : 40%; margin: auto;background-color:aqua;">
+        <div style="border : 1px solid rgb(15, 15, 15); text-align: center; background-color: rgb(122, 7, 117);color: rgb(245, 245, 245);"><b>Vue Js Crash course</b></div>
+        <div class="forms"  style="padding-left: 10%;  justify-content: space-evenly;   justify-content: space-between;">
+            <input placeholder="First name  :" disabled=true>
+            <input v-model="firstname" placeholder="Ex: Carolina" ><br>
+            <input placeholder="Last name  :" disabled=true>
+            <input v-model="lastname" placeholder="Ex: James" ><br>
+            <input placeholder="Title  :" disabled=true>
+            <input v-model="titles" placeholder="Ex: Ms" >
+        </div><br>
+        <div style="border : 1px solid black; text-align: center;color:rgb(74, 14, 238);background-color:rgb(253, 184, 196);">
+            Welcome {{titles}} {{firstname}} {{lastname}} to the world of Vuejs...
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script type="text/javascript"></script>
+    <script src="1question.js"></script>
+</body>
+</html>

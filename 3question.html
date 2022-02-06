@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8" />
+   <script type="text/javascript" src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+   
+   
+  <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+  <div id="app">
+        <input type="number" name="num1" v-model="num1">
+        <p>{{ num1 }}</p>
+        <input type="number" name="num2" v-model="num2">
+        <p>{{ num2 }}</p>
+        <hr>
+        <p>{{ result }}</p>
+  </div>
+
+<script type="text/javascript">
+
+new Vue({
+  el: '#app',
+  data: {
+    num1: 0,
+    num2: 0,
+  },
+  computed: {
+  	result: function () {
+          return parseInt(this.num1) + parseInt(this.num2);
+    }
+  }
+});
+
+      app.mount("#app");
+
+   </script>
+</body>
+
+</html>
